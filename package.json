@@ -1,0 +1,15 @@
+{
+    "name": "ronniedutta.convergent",
+    "title": "Convergent",
+    "description": "A cooler & slightly punchier colour palette, based on the Brackets Dark theme. The PHP styling is better for when mixed with HTML/XML.",
+    "homepage": "https://github.com/binaryfunt/convergent-brackets-theme",
+    "version": "1.0.0",
+    "author": "Ronnie Dutta (https://github.com/binaryfunt)",
+    "license": "MIT",
+    "theme": {
+        "file": "theme.less",
+        "dark": true,
+        "addModeClass": true
+    },
+    "keywords": ["theme", "convergent", "dark", "php"]
+}
