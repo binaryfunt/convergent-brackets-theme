@@ -1,0 +1,214 @@
+/* ----- Brackets Convergent Theme, by Ronnie Dutta ----- */
+
+/* Convergent colours (1 is more saturated than 2) */
+@background: #131619;
+@foreground: #DDD;
+
+@green: #83C947;
+@lime: #D3D33E;
+@yellow: #C9BF43;
+@blue: #53ABF7; //#78A8FF alternate
+@pale-blue1: #A2D2E3;
+@pale-blue2: #BFDBE5;
+@cyan: #00DFFC;
+//@cyan2: #3EDAFF; not used
+@dark-teal1: #2F484B;
+@dark-teal2: #1E2F31;
+@pink1: #DE4A90;
+@pink2: #DE72A5;
+@purple: #D28BFF; //#C189E5
+@red: #EF2E2A;
+@dark-red: #711111;
+@grey: #767676;
+
+/* Code Styling */
+
+.CodeMirror, .CodeMirror-scroll {
+  background-color: @background;
+  color: @foreground;
+}
+
+.cm-keyword, .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote, {
+  color: @blue;
+}
+.cm-atom, .cm-string, .cm-string-2, .cm-hr {
+  color: @lime; //#BAC46A
+}
+.cm-number, .cm-attribute, .cm-plus {
+  color: @pink2;
+}
+.cm-attribute {
+  color: @purple;
+}
+.cm-def, .cm-property {
+  color: @purple;
+}
+.cm-variable, .cm-variable-2, .cm-variable-3, .cm-operator, .cm-meta, .cm-bracket {
+  color: @foreground;
+}
+.cm-comment {
+  color: @grey;
+}
+.cm-minus {
+  color: @red;
+}
+.cm-error {
+  color: @foreground;
+  background: @dark-red;
+}
+.cm-header {color: #d85896;}
+.cm-link {color: #b77fdb; text-decoration: none;}
+.cm-rangeinfo {color: #6c71c4;}
+
+
+/* HTML/XML */
+.cm-m-xml.cm-tag {
+  color: @blue;
+}
+.cm-m-xml.cm-attribute {
+  color: @pink2;
+}
+.cm-m-xml.cm-string {
+  color: @pale-blue2;
+}
+.cm-m-xml.cm-atom {
+  color: @lime;
+}
+.cm-m-xml.cm-meta {
+  color: @cyan;
+}
+
+/* PHP */
+.cm-m-clike.cm-keyword {
+  color: @lime;//@purple; alternate
+}
+.cm-m-clike.cm-builtin {
+  color: @purple;//@pale-blue1;
+}
+.cm-m-clike.cm-def {
+  color: @blue;
+}
+.cm-m-clike.cm-meta {
+  color: @cyan;
+}
+.cm-m-clike.cm-atom {
+  color: @pink1;
+}
+.cm-m-clike.cm-string {
+  color: @pale-blue1; // ;
+}
+.cm-m-clike.cm-variable {
+  color: ;
+}
+.cm-m-clike.cm-variable-2 {
+  color: ;
+}
+
+/* CSS */
+.cm-m-css.cm-property {
+  color: @pale-blue1;
+}
+.cm-m-css.cm-def {
+  color: @purple;//@pale-blue2;
+}
+.cm-m-css.cm-keyword {
+  color: @cyan;
+}
+
+/* JavaScript/JSON */
+.cm-m-javascript.cm-atom {
+  color: @pink1;
+}
+.cm-m-javascript.cm-property {
+  color: @pale-blue1;
+}
+
+/* Python */
+.cm-m-python.cm-builtin {
+  color: @pink1;
+}
+
+
+
+/* Extra CSS */
+
+.CodeMirror-searching {
+  background-color: @yellow;
+  border-radius: 0;
+  &.searching-current-match {
+    background-color: @green;
+  }
+}
+
+
+.CodeMirror-cursor {
+  border-left: 1px solid #c5c8c6 !important;
+}
+
+.CodeMirror-gutters {
+  background-color: @background;
+  border-right: none;
+}
+
+.CodeMirror-linenumber {
+  color: @grey;
+}
+
+.CodeMirror .CodeMirror-selected {
+  background: #333f48;
+}
+.CodeMirror-focused .CodeMirror-selected {
+  background: #0050a0;
+}
+
+.CodeMirror-activeline-background, .CodeMirror-activeline .CodeMirror-gutter-elt {
+  background: transparent; // or #1D232A
+}
+.CodeMirror-activeline .CodeMirror-gutter-elt {
+  color: @foreground;
+}
+
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+  /* Ensure visibility against gray inline editor background */
+  background-color: @dark-teal2; //2e5c00
+  color: @foreground !important;
+}
+.CodeMirror-matchingbracket {
+  background-color: @dark-teal1;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+  border-left: none !important;
+  border-bottom: 1px solid #FFF;
+}
+
+
+.CodeMirror-foldgutter-open:after {
+  color: #666;
+}
+.CodeMirror-foldgutter-folded:after {
+  color: #aaa;
+}
+
+.CodeMirror.over-gutter, .CodeMirror-activeline {
+  .CodeMirror-foldgutter-open:after {
+    color: #888;
+  }
+}
+
+.CodeMirror-foldmarker {
+  border-color: #000;
+  color: #ccc;
+  background-color: #444;
+}
+
+/* Non-editor styling */
+
+.image-view,
+.not-editor {
+  background-color: @background;
+}
+
+.view-pane .image-view {
+  color: @foreground;
+}
