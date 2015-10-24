@@ -13,13 +13,14 @@
 @cyan: #00DFFC;
 //@cyan2: #3EDAFF; not used
 @dark-teal1: #2F484B;
-@dark-teal2: #1E2F31;
+@dark-teal2: #24383B;
 @pink1: #DE4A90;
 @pink2: #DE72A5;
 @purple: #D28BFF; //#C189E5
 @red: #EF2E2A;
 @dark-red: #711111;
-@grey: #767676;
+@grey1: #8B8B8B;
+@grey2: #767676;
 
 /* Code Styling */
 
@@ -47,7 +48,7 @@
   color: @foreground;
 }
 .cm-comment {
-  color: @grey;
+  color: @grey1;
 }
 .cm-minus {
   color: @red;
@@ -56,6 +57,7 @@
   color: @foreground;
   background: @dark-red;
 }
+/* Unchanged from Brackets Dark */
 .cm-header {color: #d85896;}
 .cm-link {color: #b77fdb; text-decoration: none;}
 .cm-rangeinfo {color: #6c71c4;}
@@ -151,7 +153,7 @@
 }
 
 .CodeMirror-linenumber {
-  color: @grey;
+  color: @grey2;
 }
 
 .CodeMirror .CodeMirror-selected {
@@ -168,13 +170,13 @@
   color: @foreground;
 }
 
-.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+.CodeMirror-matchingtag {
   /* Ensure visibility against gray inline editor background */
   background-color: @dark-teal2; //2e5c00
-  color: @foreground !important;
 }
 .CodeMirror-matchingbracket {
   background-color: @dark-teal1;
+  color: @foreground !important;
 }
 
 .CodeMirror-overwrite .CodeMirror-cursor {
